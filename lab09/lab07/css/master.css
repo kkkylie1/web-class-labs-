@@ -66,8 +66,9 @@ p {
     height: 100%;
     background-color: rgb(2, 71, 36);
     color: white;
-    padding: 50px;
-    
+    font-size: 14px;
+    font-family: Arial;
+    padding: 20px;
 }
 
 footer {
