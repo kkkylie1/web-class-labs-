@@ -70,8 +70,8 @@ p {
     font-family: Arial;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: left;
 
 }
@@ -85,8 +85,8 @@ p {
     font-family: Arial;
     padding-top: 0px;
     padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: left;
 
 }
