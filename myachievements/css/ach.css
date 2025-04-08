@@ -1,7 +1,25 @@
-.narbar{
-    background-color: rgb(4, 4, 66);
+.navbar{
+    background-color:white;
+    width:100%;
+    position:fixed;
 }
 
-.narlogo{
-    width: 300px;
+.container-fluid{
+    background-color: white;
+}
+
+.navlogo{
+    width:200px;
+}
+
+.nav-link{
+    color:rgb(54, 110, 141);
+    font-size: 30px;
+    font-family: serif;
+    padding-left: 30px;
+}
+
+.homepagebanner{
+    width: 100%;
+    height: auto;
 }
