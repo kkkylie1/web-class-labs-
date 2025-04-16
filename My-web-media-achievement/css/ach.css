@@ -114,18 +114,18 @@ img.intropic {
     border-radius: 1em;
     width: 20%;
     position: absolute;
-    bottom: 1px;
+    top: 1px;
     right: 16px;
 }
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
     .section1 .card {
         position: absolute;
         top: 1px;
         right: 16px;
         height: 20%;
     }
-}
+} */
 
 .adobe-logo {
     width: 20%;
