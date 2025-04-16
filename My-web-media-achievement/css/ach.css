@@ -1,0 +1,628 @@
+.navbar {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.container-fluid {
+    background-color: white;
+}
+
+.navlogo {
+    width: 230px;
+    height: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+
+.nav-link {
+    color: rgb(54, 110, 141);
+    margin: 20px;
+    font-size: 30px;
+    font-family: serif;
+    padding-left: 15px;
+    padding-right:15px;
+    /* white-space: nowrap; */
+}
+
+.nav-link:hover {
+    color: rgb(236 234 230);
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        font-size: 18px;
+        margin: 5px;
+    }
+}
+
+.homepagebanner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.section1 {
+    padding: 200px 150px 200px 150px;
+}
+
+
+h1 {
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(54, 110, 141);
+}
+
+p {
+    font-size: 25px;
+    color: rgb(54, 110, 141);
+    font-family: "Lora", serif;
+}
+
+.br {
+    padding-top: 50px;
+}
+
+.line-one {
+    width: 100%;
+    max-width: 100%;
+    border: 10px solid rgb(54, 110, 141);
+    opacity: 0.7;
+    margin: 0 auto 0px auto;
+    padding: 0;
+    z-index: 1;
+}
+
+img.intropic {
+    width: 100%;
+    height: auto;
+}
+
+.skill-container .col-sm-3 {
+    padding: 0;
+    margin: 0;
+}
+
+#intro .col-sm-9 {
+    position: relative;
+    padding: 0 80px 0 0px;
+    justify-content: center;
+}
+
+.intro h1 {
+    padding-bottom: 20px;
+}
+
+.section1 .card {
+    background-color: white;
+    border-radius: 1em;
+    width: 20%;
+    position: absolute;
+    bottom: 1px;
+    right: 16px;
+}
+
+@media (max-width: 1300px) {
+    .section1 .card {
+        position: absolute;
+        top: 1px;
+        right: 16px;
+        height: 20%;
+    }
+}
+
+.adobe-logo {
+    width: 20%;
+    height: auto;
+    opacity: 0.4;
+}
+
+.intro-content {
+    padding: 10px;
+}
+
+.row h6 {
+    color: rgb(54, 110, 141);
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.skill-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section1 .row {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.travelingintro {
+    width: 100%;
+    background-color: rgb(54, 110, 141);
+    padding: 150px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.travelingintro h1 {
+    color: white;
+}
+
+.travelingintro p {
+    color: white;
+    padding: 50px 80px 50px 80px;
+    text-align: justify;
+}
+
+.Tokyodiraies .row {
+    display: flex;
+}
+
+.Tokyodiraies {
+    background-color: rgb(236, 234, 230);
+    padding: 150px 70px;
+}
+
+.Tokyodiraies .col-sm-6 {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-left:80px;
+    padding-right:80px; */
+}
+
+.travel-tokyo-pics {
+    /* background-color: rgb(255,255,255,0.9); */
+    background-color: rgb(255, 255, 255, 0.9);
+    width: 85%;
+    height: auto;
+    padding: 5px;
+    justify-content: left;
+    border-radius: 0.5em;
+    margin: 20px 0px 20px 0px;
+}
+
+
+
+.bali-travel {
+    padding: 0px 70px 150px 70px;
+    background-color: rgb(236, 234, 230);
+}
+
+.h1-travel {
+    color: rgb(54, 110, 141);
+    font-size: 80px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.p-travel-tokyo {
+    color: rgb(54, 110, 141);
+    text-align: right;
+    padding: 20px;
+    padding-right: 40px;
+    font-size: 20px;
+}
+
+.p-travel-bali {
+    color: rgb(54, 110, 141);
+    text-align: left;
+    padding: 20px;
+    padding-right: 40px;
+    font-size: 20px;
+}
+
+.bali-video {
+    width: 90%;
+}
+
+
+.noline {
+    text-decoration: none;
+    color: rgb(54, 110, 141);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.btn-full-video {
+    font-size: 23px;
+    padding: 7px 13px;
+    margin: 30px;
+    border-radius: 0.8em;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid rgb(54, 110, 141);
+}
+
+.noline:hover {
+    color: rgb(54, 110, 141);
+    outline: 1em;
+    transition: 0.3s;
+}
+
+.btn-full-video:hover {
+    background-color: white;
+    color: rgb(54, 110, 141);
+    font-size: 24px;
+    transition: 0.3s;
+    border: none;
+    padding: 10px 15px;
+
+}
+
+.bali-travel .col-sm-6 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 {
+    background-color: rgb(54, 110, 141);
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 150px;
+}
+
+.heading-s3 h1 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0px;
+    color: rgb(236 234 230);
+}
+
+.col-sm-4 .card {
+    height: 100%;
+    border-radius: 1em;
+    padding: 25px;
+    background-color: rgb(236, 234, 230);
+
+}
+
+.col-sm-4 .card:hover {
+    color: transparent;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.container {
+    padding: 25px;
+    margin: 0;
+}
+
+.container:hover {
+    border: 1em;
+    border-color: rgb(236 234 230);
+}
+
+.container p {
+    margin: 0;
+    padding-top: 20px;
+    text-align: justify;
+    height: 200px;
+    overflow-x: scroll;
+}
+
+/* .section4 {
+    padding: 70px 0 0px 0;
+} */
+
+.section4 h1 {
+    text-align: center;
+    padding: 30px 0 30px 0;
+    margin: 0;
+}
+
+.section4 p {
+    margin: 0;
+    padding: 0 150px 100px 150px;
+    text-align: justify;
+}
+
+.slider-wrapper {
+    position: relative;
+    justify-content: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+@media (min-width: 1300px) {
+    .slider-wrapper {
+        width: 80%;
+        margin: auto;
+        margin-top: 55px;
+    }
+}
+
+.slider-photo {
+    display: flex;
+    /* aspect-ratio: 16/9; */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    background-color: black;
+
+}
+
+.slider-photo img {
+    flex: 1 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    aspect-ratio: 16/9;
+    scroll-snap-align: start;
+    object-fit: contain;
+
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: rgb(182, 187, 189);
+    opacity: 0.75;
+    transition: opacity ease 250s;
+    border-radius: 50%;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+    background-color: white;
+}
+
+.section5 {
+    background-color: rgb(236, 234, 230);
+    padding: 0 70px 70px 70px;
+}
+
+.design-content {
+    padding: 40px 60px;
+    margin: 0;
+}
+
+.s5-design-p1 {
+    display: flex;
+    text-align: justify;
+    /* padding: 0 40px 0 40px; */
+    margin: 0 70px;
+}
+
+.s5-design-p2 {
+    display: flex;
+    text-align: justify;
+    /* padding: 0 60px 0 50px; */
+    margin: 0 70px;
+}
+
+.design-content .col-sm-6 {
+    padding: 0;
+}
+
+.design-h1 {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin: 0px;
+}
+
+
+.design-container .col-sm-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-design {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.zine-design {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.section6 {
+    background-color: rgb(54, 110, 141);
+    padding: 50px 150px 150px 150px;
+}
+
+.section6 h1 {
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.school p {
+    color: white;
+    text-align: end;
+}
+
+.school col-sm-8 {
+    padding: 0;
+}
+
+.school col-sm-4 {
+    padding: 0;
+}
+
+.school .row {
+    padding: 0;
+    margin: 0;
+}
+
+.school h5 {
+    color: rgb(54, 110, 141);
+}
+
+.school li {
+    color: rgb(54, 110, 141);
+}
+
+
+.school .col-sm-4 {
+    position: relative;
+}
+
+
+.school-grades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.school .card {
+    border-radius: 1em;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    margin: auto;
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 234, 230);
+}
+
+.socialicons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialicons a {
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+    margin: 15px;
+
+}
+
+.socialicons a i {
+    font-size: 2em;
+    color: rgb(54, 110, 141);
+    opacity: 0.7;
+}
+
+.socialicons a :hover i {
+    color: white;
+    padding: 20 px;
+    transition: 0.5s;
+}
+
+.socialicons a :hover {
+    color: white;
+    padding: 20 px;
+    opacity: 1;
+    transition: 0.5s;
+    font-size: 3em;
+    ;
+}
+
+footer {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footernav {
+    width: 100%;
+    margin: 10px 0;
+    padding-bottom: 10px;
+}
+
+.footernav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footernav ul li a {
+    color: rgb(54, 110, 141);
+    margin: 35px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footernav ul li a:hover {
+    color: white;
+    opacity: 1;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 18px;
+    opacity: 0.8;
+}
