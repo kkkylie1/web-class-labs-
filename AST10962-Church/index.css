@@ -342,7 +342,7 @@
 	text-decoration: none;
 	color: var(--color--secondary);
 	font-size:40px;
-	padding:5px;
+	padding:7px 7px;
 	transition-duration: 0.3s;
 }
 
@@ -352,26 +352,4 @@
 	font-size:50px;
 	padding:5px;
 
-}
-
-/* Default layout: social media and iframe side by side */
-.s-con-main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Add spacing between elements */
-}
-
-.s-con-part {
-    flex: 1; /* Make each part take equal space */
-}
-
-/* Media query for screens smaller than 600px */
-@media (max-width: 600px) {
-    .s-con-main {
-        flex-direction: column; /* Stack elements vertically */
-    }
-
-    .iframe-container {
-        margin-top: 20px; /* Add spacing above the iframe */
-    }
 }
