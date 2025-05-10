@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HTML Designed By YAU Callum Tze Hei -->
+<!-- Bruh ok -->
+<head>
+	<title>St. Teresa Church</title>
+	<link rel="icon" href="images/common/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width">
+	<meta charset="utf-8">
+
+		<!-- icon -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<!-- JQuery -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>
+
+	<!-- Google Fonts Preconnects -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<!-- Google Font Downloads -->
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+	<link href="Project Aided by Hermina Tealie">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="mobile.css">
+
+	<!-- Custom Script -->
+	<script src="helpers.js"></script>
+	
+</head>
+
+<body class="body-main font-archivo">
+
+	<!-- Start of Nav -->
+	<div class="nav-base">
+		<nav class="nav-container">
+			<img class="nav-img" src="images/common/logo.png" alt="St. Teresa's Church">
+
+			<div class="nav-sub">
+				<ul class="">
+					<li class="nav-li" onClick=toggleLang()> <span class="eng font-noto-tc">中文</span> <span class="chi">Eng</span> </li>
+
+					<a href="#abt"><li class="nav-li">
+						<span class="eng">About Us</span>
+						<span class="chi">關於我們</span></li>
+					</a>
+
+					<a href="#"><li class="nav-li">
+						<span class="eng">Events</span>
+						<span class="chi">活動</span></li>
+					</a>
+
+					<a href="#"><li class="nav-li">
+						<span class="eng">Connect with us!</span>
+						<span class="chi">與我們連繫！</span></li>
+					</a>
+
+					<a href="#"><li class="nav-li">
+						<span class="eng">News</span>
+						<span class="chi">新聞</span></li>
+					</a>
+
+					<a href="#"><li class="nav-li">
+						<span class="eng">Resources</span>
+						<span class="chi">資源</span></li>
+					</a>
+
+
+				</ul>
+			<div>
+		</nav>
+
+		<script>
+			$(document).ready(function () {
+				$(window).on("scroll", function () {
+					if ($(window).scrollTop() > 100) {
+						$(".nav-container").addClass("shrink");
+						$(".nav-img").addClass("shrink");
+						$(".nav-li").addClass("shrink");
+					} else {
+						$(".nav-container").removeClass("shrink");
+						$(".nav-img").removeClass("shrink");
+						$(".nav-li").removeClass("shrink");
+					}
+				});
+			});
+		</script>
+	</div>
+	<!-- End of Nav -->
+
+	<header class="container-fluid g-0">
+		<div id="banner" class="carousel slide" data-bs-ride="carousel">
+
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
+				<button type="button" data-bs-target="#banner" data-bs-slide-to="1"></button>
+				<button type="button" data-bs-target="#banner" data-bs-slide-to="2"></button>
+				<button type="button" data-bs-target="#banner" data-bs-slide-to="3"></button>
+				<button type="button" data-bs-target="#banner" data-bs-slide-to="4"></button>
+				<button type="button" data-bs-target="#banner" data-bs-slide-to="5"></button>
+				<button type="button" data-bs-target="#banner" data-bs-slide-to="6"></button>
+				<button type="button" data-bs-target="#banner" data-bs-slide-to="7"></button>
+				<button type="button" data-bs-target="#banner" data-bs-slide-to="8"></button>
+			</div>
+
+			<div class="carousel-inner">
+				<!-- Images -->
+				<div class="carousel-item active">
+					<img src="images/church-1.jpg" alt="1" class="d-block" style="width: 100%;">
+				</div>
+				<div class="carousel-item">
+					<img src="images/church-2.jpg" alt="2" class="d-block" style="width: 100%;">
+				</div>
+				<div class="carousel-item">
+					<img src="images/church-3.jpg" alt="3" class="d-block" style="width: 100%;">
+				</div>
+				<div class="carousel-item">
+					<img src="images/church-5.jpg" alt="5" class="d-block" style="width: 100%;">
+				</div>
+				<div class="carousel-item">
+					<img src="images/church-6.jpg" alt="6" class="d-block" style="width: 100%;">
+				</div>
+				<div class="carousel-item">
+					<img src="images/church-7.jpg" alt="7" class="d-block" style="width: 100%;">
+				</div>
+				<div class="carousel-item">
+					<img src="images/church-8.jpg" alt="8" class="d-block" style="width: 100%;">
+				</div>
+				<div class="carousel-item">
+					<img src="images/church-9.jpg" alt="9" class="d-block" style="width: 100%;">
+				</div>
+
+				<!-- Button controls -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</button>
+
+			</div>
+		</div>
+	</header>
+
+	<section class="s-spacing-base">
+		<div class="s-quote s-spacing">
+			<span class="eng">
+				<h3><b>Mark 10:27</b></h3><br>
+				<p>"Jesus looked at them and said, 'With man it is impossible, but not with God. For all things are possible with God."</p>
+			</span>
+			<span class="chi">
+				<h3><b>馬可福音 10:27</b></h3><br>
+				<p>耶穌看著他們說: “在人是不能的，在神卻不然，因為神凡事都能。</p>
+			</span>
+		</div>
+	</section>
+
+	<section class="s-spacing-base">
+		<div class="s-welcome s-spacing">
+			<div class="container-fluid g-0">
+				<div class="row g-0">
+					<div class="col-sm-6">
+						<span class="eng">
+							<h3><b>Welcome to <br>St. Teresa's Church</b></h3>
+							<p>We are a community of faith, hope, and love.<br>Join us in our journey of faith and service today!</p>
+						</span>
+						<span class="chi">
+							<h3><b>歡迎來到聖德肋堂</b></h3>
+							<p>我們是一個充滿信仰、希望和愛的社區。<br>從今天起，加入我們的信仰和服務之旅吧！</p>
+						</span>
+					</div>
+
+					<div class="col-sm-6">
+						<img src="images/common/logo.png" alt="St. Teresa's Church">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="s-spacing-base" id="abt">
+		<div class="s-abt-us s-spacing no-top">
+			<ul>
+				<li class="s-abt-us-li" onclick="abtUsUpd(
+						'images/church-1.jpg',
+						'About Parish',
+						'教堂簡介',
+						'St Teresa’s Church stands out as a special landmark feature in the area, preaching gospel and serving the community.  Currently the church organizes eight masses on Sunday and provides a wide range of formation activities for pasturing.  One of the major events is the parade of holy Mary to spread good news to the people. ',
+						' 聖德肋撒教堂是該地區的特殊地標，傳揚福音並服務社區。目前教會在星期日舉辦八場彌撒，並提供廣泛的牧養培育活動。 其中一項主要活動是聖母巡遊，向人們傳播好消息。聖德肋撒教堂是以利雪的聖德肋撒（Saint Thérèse of Lisieux，1873-1897）命名，她是法國巴黎利雪加爾默羅女修會的成員。 她在 15 歲時加入修道院，24 歲時去世。 她於 1925 年被封為聖母。 兩年後，教宗庇護十一世宣佈她為傳教會的女贊助人。'
+					)">
+					<span class="eng">About Parish</span>
+					<span class="chi">教堂簡介</span>
+				</li>
+
+				<li class="s-abt-us-li" onclick="abtUsUpd(
+						'images/church_st.jpg',
+						'Saint Thérèse of Lisieux',
+						'關於聖德肋',
+						'St Teresa’s Church is named after Saint Thérèse of Lisieux (1873-1897）who belonged to the Carmelite French Paris Lisieux Convent.  She joined the convent when she was only 15 and died at the age of 24.  She was canonized in 1925.  Two years later, she was declared a patroness of the missions by the Pope Pius XI.',
+						'聖德肋撒堂以關於聖女小德蘭(1873-1897)命名。她在15歲時加入修道院24歲時去世。她於 1925 年被封為聖母。 兩年後，教宗庇護十一世宣佈她為傳教會的女贊助人。'
+					)">
+					<span class="eng">Saint Teresa</span>
+					<span class="chi">關於聖女小德蘭</span>
+				</li>
+
+				<li class="s-abt-us-li" onclick="abtUsUpd(
+						'images/church-7.jpg',
+						'History',
+						'歷史',
+						'St Teresa’s Church was commissioned on 23.4.1923.  Before its completion, Catholics of the Kowloon Tong area have to go all the way to the Rosary Church in Tsim Sha Tsui or to the chapel inside the Ngau Chi Wan St Joseph’s Nursing Home under the Little Sisters of the Poor to attend mass. ',
+						'聖德肋撒堂於1923年4月23日落成。 在落成之前，九龍塘一帶的教友須遠赴尖沙咀玫瑰堂或貧窮姊妹會轄下牛池灣聖若瑟護養院內的小聖堂參加彌撒。'
+					)">
+					<span class="eng">History</span>
+					<span class="chi">歷史</span>
+				</li>
+
+
+				<li class="s-abt-us-li" onclick="abtUsUpd(
+						'images/church-2025.png',
+						'2025 Goals',
+						'2025 目標',
+						'<b>The Jubilee 2025 Prayer Pilgramis of Hope</b><br>Father in heaven, may the faith you have given us in your son, Jesus Christ, our brother, and the flame of charity enkindled in our hearts by the Holy Spirit, reawaken in us the blessed hope for the coming of your Kingdom. May your grace transform us into tireless cultivators of the seeds of the Gospel. May those seeds transform from within both humanity and the whole cosmos in the sure expectation of a new heaven and a new earth, when, with the powers of Evil vanquished, your glory will shine eternally. May the grace of the Jubilee reawaken in us, Pilgrims of Hope, a yearning for the treasures of heaven. May that same grace spread the joy and peace of our Redeemer throughout the earth. To you our God, eternally blessed, be glory and praise for ever. Amen',
+						'<b>2025 禧年禱文希望的朝聖者。</b><br>天父，願祢藉着祢的聖子 ― 我們的兄長耶穌基督所賦予我們的信德，和聖神在我們心中燃點的愛德火焰，重振我們對祢神國的望德。願祢的恩寵轉化我們，使我們努力不懈地栽種福音的幼苗。但願那些福音幼苗，使人類和宇宙萬物由內而外得以轉化，並能懷着確切的希望，期待新天新地的來臨，那時，邪惡勢力要全被摧毀，祢的榮耀卻要永遠常存。願禧年的恩寵重振我們這些希望的朝聖者對天國寶藏的渴求。願這同一恩寵使我們救主的喜樂與平安惠及普世萬民。願讚頌和光榮歸於祢 ― 天主，至於無窮之世。亞孟。'
+					)">
+					<span class="eng">2025 Goals</span>
+					<span class="chi">2025 目標</span>
+				</li>
+			</ul>
+
+			<div class="row g-0 h-sep">
+
+				<div class="col-sm-5 g-0">
+					<img class="s-abt-us-img" src="images/common/placeholder.svg">
+				</div>
+
+				<div class="col-sm g-0">
+					<h4 class="s-abt-us-title"><b>
+						<span class="eng">Testing JavaScript</span>
+						<span class="chi">標題標題</span>
+					</b></h4>
+					<p class="s-abt-us-body lorem txt-justify"><b>Please use the buttons above to see if the JS is working</b><br><br></p>
+				</div>
+
+			</div>
+
+			<script>
+				function abtUsUpd(img, tChi, tEng, bChi, bEng) {
+					abtUsUpdtImg(img);
+					abtUsUpdtTitle(tChi, tEng);
+					abtUsUpdtBody(bChi, bEng);
+
+					if ($('.chi').is(':visible')) {
+						$('.chi').show();
+						$('.eng').hide();
+					} else if ($('.eng').is(':visible')) {
+						$('.eng').show();
+						$('.chi').hide();
+					};
+
+				}
+
+				function abtUsUpdtImg(img) {
+					$('.s-abt-us-img').attr('src', img);
+				}
+
+				function abtUsUpdtTitle(eng, chi) {
+					$('.s-abt-us-title').html(`
+						<b><span class="eng">${eng}</span></b>
+						<b><span class="chi">${chi}</span></b>
+					`);
+				}
+
+				function abtUsUpdtBody(eng, chi) {
+					$('.s-abt-us-body').html(`
+						<span class="eng">${eng}</span>
+						<span class="chi">${chi}</span>
+					`);
+				}
+			</script>
+		</div>
+	</section>
+
+	<section class="s-spacing-base" id="evts">
+		<div class="s-evts s-spacing">
+			<h3>
+				<span class="eng">Upcoming Events</span>
+				<span class="chi">即將舉行的活動</span>
+			</h3>
+
+			<div class="evt-card-container">
+
+
+				<div class="evt-card">
+					<div class="evt-card-fade-sec"></div>
+					<div class="evt-card-fade-pri"></div>
+					<img src="images/Event_3.jpg">
+					<h4>
+						<span class="eng">St.Teresa Orchestra Easter Concert</span>
+						<span class="chi">聖德肋撒堂管弦樂團復活節音樂會</span>
+					</h4>
+					<p>
+						<span class="eng"><b>Date: 26/4 Time:8:00pm</b></span>
+						<span class="chi">活動 3 的詳細資訊</span>
+					</p>
+				</div>
+
+				<div class="evt-card" style="min-width: 30%;">
+					<div class="evt-card-fade-sec"></div>
+					<div class="evt-card-fade-pri"></div>
+					<img src="images/Event_1.jpg">
+					<h4>
+						<span class="eng">Devotion to Blessed Virgin Mary</span>
+						<span class="chi">敬禮聖母</span>
+					</h4>
+					<p class="txt-justify">
+						<span class="eng"><b>Date: 18/5 (Sun) Time: 3:00pm</b><br></span>
+						<span class="chi">日期：18/5（日） 時間：下午3:00</span>
+					</p>
+				</div>
+
+				<div class="evt-card">
+					<div class="evt-card-fade-sec"></div>
+					<div class="evt-card-fade-pri"></div>
+					<img src="images/Event_2.jpg">
+					<h4>
+						<span class="eng">2025 The Jubilee Vocation Month Activities </span>
+						<span class="chi">2025 禧年聖召月活動</span>
+					</h4>
+					<p>
+						<span class="eng"><br><b>Date: 4/5 to 25/5</b></span>
+						<span class="chi">活動2的詳細資訊</span>
+					</p>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<section class="s-spacing-base" id="con">
+		<div class="s-con s-spacing">
+			<h3>
+				<span class="eng">Connect with us!</span><br>
+				<span class="chi">與我們連繫！</span><br>
+			</h3>
+
+			<div class="s-con-main">
+				<div class="s-con-part">
+					<h4>
+						<span class="eng" style="overflow-wrap: anywhere;"><br>Phone：(852) 2336-2241</span><br>
+						<span class="chi"><br>電話：(852) 2336-2241</span><br>
+						<span class="eng" style="overflow-wrap: anywhere;">
+							Mail：<br>stteresa@catholic.org.hk
+						</span><br>
+						<span class="chi"style="overflow-wrap: anywhere;"> 電郵：stteresa@catholic.org.hk</span><br>
+						<span class="eng">Address: 258 Prince Edward Road, Kowloon</span><br>
+						<span class="chi">地址：九龍太子道258號</span><br>
+						<div class="socialmedia">
+						<a href="https://www.facebook.com/stteresahk"><i class="fa-brands fa-facebook"></i></a>
+						<a href="https://www.instagram.com/stteresachurch.hk?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+						</div>
+					</h4>
+					<p></p>
+				</div>
+				<div class="s-con-part">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1285.5084718681135!2d114.17682527589557!3d22.326011995452777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400cdbe39c11f%3A0x37bb02de66953a87!2sSaint%20Teresa&#39;s%20Church!5e1!3m2!1sen!2shk!4v1746885577150!5m2!1sen!2shk" width="90%" height="80%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+
+				<script>
+					function conUpt(img, tEng, tChi, bEng, bChi) {
+						$('.s-con-part img').attr('src', img);
+
+						$('.s-con-part h4').html(`
+							<span class="eng">${tEng}</span>
+							<span class="chi">${tChi}</span>
+						`);
+
+						$('.s-con-part p').html(`
+							<span class="eng">${bEng}</span>
+							<span class="chi">${bChi}</span>
+						`);
+
+						if ($('.chi').is(':visible')) {
+							$('.chi').show();
+							$('.eng').hide();
+						} else if ($('.eng').is(':visible')) {
+							$('.eng').show();
+							$('.chi').hide();
+						};
+					}
+				</script>
+			</div>
+
+			<ul>
+				<li onClick="conUpt(
+					'images/church-1.jpg',
+					'Opening Hours',
+					'開放時間',
+					'<b>Sunday:</b><br> 6:45am to 8:00pm<br><br><b>Monday to Friday:</b><br>6:15am to 8:00pm<br><br><b>Saturday:</b><br> 6:15am to 8:00pm</b>',
+					'<b>主日</b><br> 早上 6:45 至 晚上 8:00<br><br> <b>星期一至五<br></b>早上 6:15 至 晚上 8:00<b><br><br>星期六<br></b>早上 6:15 至 晚上 8:00'
+					)">
+
+					<span class="eng">Opening Hours</span>
+					<span class="chi">開放時間</span>
+				</li>
+
+				<li onClick="conUpt(
+					'images/church-2.jpg',
+					'Mass Schedule',
+					'彌撒時間表 <br><br>修和聖事：彌撒前30分鐘】',
+					'(Confession：<br>30 mins before Mass)<b><br><br>Sunday Mass:</b><br><br>7:15am	【Chi】<br>	8:30am	【Eng】	<br> 10:00am	【Chi】<br>	11:30am	【Eng】	<br> 12:45pm	【Chi】<br>	4:30pm	【Flippino】 <br>1st & 4th Sundays	<br>6:00pm	【Chi】',
+					'<br><b>主日提前感恩祭 (星期六）</b><br>下午 4:15	【中】<br>	下午 6:00 【中】</b> <b><br><br>主日感恩（星期日）</b><br> 早上 7:15	【中】	<br>早上 8:30	【英】<br>	早上 10:00	【中】<br>	早上 11:30 【英】	<br>中午 12:45	【中】	<br>下午 4:30	【菲】 <br>每月第一及第四主日	<br>黃昏 6:00 【中】'
+					)">
+					<span class="eng">Mass Schedule</span>
+					<span class="chi">彌撒時間表</span>
+				</li>
+
+				<li onClick="conUpt(
+					'images/church-3.jpg',
+					'Devotions<br>',
+					'朝聖',
+					' <b>First Friday:</b><br><br>Eucharistic Adoration </b><br> 5:00pm【Chi】	<br> <br>Mass for Most Sacred Heart of Jesus<br>6:00pm【Chi】<br><b><br>Second Friday:</b></br><br>	Eucharistic Adoration <br> 5:00pm	【Chi】	<br></br> Mass in honour of St. Teresa	<br>6:00pm	【Chi】',
+					'<b>每月首星期五</b><br><br>明供聖體</b><br>下午5:00	【中】<br> <br>耶穌聖心 感恩祭	<br>下午6:00	【中】<br><b><br>每月第二個星期五	</b></br><br>	明供聖體	<br> 下午5:00	【中】	<br></br>聖女小德肋撒 感恩祭	<br>下午6:00	【中】'
+				)">
+					<span class="eng">Devotions</span>
+					<span class="chi">朝聖</span>
+				</li>
+				
+			</ul>
+		</div>
+	</section>
+
+	<section class="s-spacing-base">
+		<div class="s-end s-spacing"></div>
+	  </section>
+
+	<Footer>
+		<div class="lazy-brand" style="height: 15vh;">
+			<img src="images/common/logo.png" alt="St. Teresa's Church">
+			<img src="images/common/logo.png" alt="St. Teresa's Church">
+			<link href="Project Aided by Hermina Tealie">
+			<img src="images/common/logo.png" alt="St. Teresa's Church">
+			<img src="images/common/logo.png" alt="St. Teresa's Church">
+		</div>
+
+		<div class="footer-main">
+			<div class="footer-part">
+				<h5>
+					<span class="eng">Contact</span>
+					<span class="chi">聯絡我們</span>
+				</h5>
+
+				<ul>
+					<li>
+						<h6><span class="eng">Address</span></h6>
+						<h6><span class="chi">地址</span></h6>
+						<span class="eng">258 Prince Edward Road, Kowloon</span><br>
+						<span class="chi">九龍太子道258號<</span>
+					</li>
+
+					<li>
+						<h6><span class="eng">Phone</span></h6>
+						<h6><span class="chi">電話</span></h6>
+						<p>+852 2336-2241</p>
+					</li>
+
+					<li>
+						<h6><span class="eng">Email Address</span></h6>
+						<h6><span class="chi">Email 地址</span></h6>
+						<p>stteresa@catholic.org.hk</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer-part">
+				<h5>
+					<span class="eng">Quick Links</span>
+					<span class="chi">快速連結</span>
+				</h5>
+
+				<ul class="footer-btn">
+					<a href="#abt"><li>
+						<span class="eng">About Us</span>
+						<span class="chi">關於我們</span>
+					</li></a>
+
+					<a href="#evts"><li>
+						<span class="eng">Events</span>
+						<span class="chi">活動</span>
+					</li></a>
+
+					<a href="#con"><li>
+						<span class="eng">Connect with Us</span>
+						<span class="chi">與我們連繫</span>
+					</li></a>
+
+				</ul>
+			</div>
+
+			<div class="footer-part">
+ 				<h5>
+					<span class="eng">Follow Us!</span>
+					<span class="chi">追蹤我們！</span>
+				</h5>
+
+            	<ul class="footer-btn">
+
+					<li><a href="https://facebook.com">
+							<i class="fa fa-facebook"></i>
+							<span class="eng">Facebook</span>
+							<span class="chi">Facebook</span>
+					</a></li>
+
+					<li><a href="https://instagram.com">
+						<i class="fa fa-instagram"></i>
+						<span>Instagram</span>
+					</a></li>
+				</ul>
+        </div>
+		</div>
+
+		<div class="footer-bottom">
+        	<p>
+            <span class="eng">© 2025 St. Teresa's Church. All rights reserved.</span><br>
+            <span class="chi">© 2025 聖德肋堂版權所有。</span>
+        	</p>
+    	</div>
+	</Footer>
+
+	<script>
+		//	Toggle Language
+		function toggleLang() {
+			if ($('.chi').css('display') === 'none')
+			{
+				$('.chi').show();
+				$('.eng').hide();
+			} else {
+				$('.eng').show();
+				$('.chi').hide();
+			}
+		}
+
+		const foreignAid = "Project Aided by Hermina Tealie";
+
+		//	Generates Lorem Ipsum
+		const newParagraph = loremIpsum();
+		$('.lorem').append(newParagraph);
+
+		//	Replaces Scroll Behavior
+		$('a[href^="#"]').on('click', function (e) {
+			e.preventDefault();
+			const target = $($(this).attr('href'));
+			if (target.length) {
+				$('html, body').animate({
+				scrollTop: target.offset().top - 200
+				}, 500);
+			}
+		});
+	</script>
+
+</body>
