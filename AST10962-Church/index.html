@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- HTML Designed By YAU Callum Tze Hei -->
-<!-- Bruh ok -->
+
 <head>
 	<title>St. Teresa Church</title>
 	<link rel="icon" href="images/common/favicon.ico" type="image/x-icon">
@@ -37,41 +36,44 @@
 
 	<!-- Custom Script -->
 	<script src="helpers.js"></script>
-	
+
 </head>
 
 <body class="body-main font-archivo">
 
+	
 	<!-- Start of Nav -->
 	<div class="nav-base">
 		<nav class="nav-container">
 			<a href="../index.html"><img class="nav-img" src="images/common/logo.png" alt="St. Teresa's Church"></a>
+			
 
 			<div class="nav-sub">
 				<ul class="">
 					<li class="nav-li" onClick=toggleLang()> <span class="eng font-noto-tc">中文</span> <span class="chi">Eng</span> </li>
+					
 
 					<a href="#abt"><li class="nav-li">
 						<span class="eng">About Us</span>
 						<span class="chi">關於我們</span></li>
 					</a>
 
-					<a href="subpage_events.html"><li class="nav-li">
-						<span class="eng">Events</span>
-						<span class="chi">活動</span></li>
+					<a href="#time"><li class="nav-li">
+						<span class="eng">Timetable</span>
+						<span class="chi">時間表</span></li>
 					</a>
 
-					<a href="#"><li class="nav-li" >
-						<span class="eng">New Information</span>
-						<span class="chi">資訊</span></li>
+					<a href="subpage_newandevent.html"><li class="nav-li">
+						<span class="eng">News and Events</span>
+						<span class="chi">消息&活動</span></li>
 					</a>
 
-					<a href="subpage.html"><li class="nav-li">
+					<a href="subpage_resources.html"><li class="nav-li">
 						<span class="eng">Resources</span>
 						<span class="chi">資源</span></li>
 					</a>
 
-					<a href="#"><li style="background-color: #E2E2F2; color: var(--color-secondary);" class="nav-li">
+					<a href="#connecting"><li style="background-color: #E2E2F2; color: var(--color-secondary);" class="nav-li">
 						<span class="eng">Connect with us!</span>
 						<span class="chi">與我們連繫！</span></li>
 					</a>
@@ -249,7 +251,7 @@
 						<span class="eng">About Parish</span>
 						<span class="chi">教堂簡介</span>
 					</b></h4>
-					<p class="s-abt-us-body lorem txt-justify">
+					<p class="s-abt-us-body ">
 						<span class="eng">St Teresa’s Church stands out as a special landmark feature in the area, preaching gospel and serving the community.  Currently the church organizes eight masses on Sunday and provides a wide range of formation activities for pasturing.  One of the major events is the parade of holy Mary to spread good news to the people. </span>
 						<span class="chi">聖德肋撒教堂是該地區的特殊地標，傳揚福音並服務社區。目前教會在星期日舉辦八場彌撒，並提供廣泛的牧養培育活動。 其中一項主要活動是聖母巡遊，向人們傳播好消息。聖德肋撒教堂是以利雪的聖德肋撒（Saint Thérèse of Lisieux，1873-1897）命名，她是法國巴黎利雪加爾默羅女修會的成員。 她在 15 歲時加入修道院，24 歲時去世。 她於 1925 年被封為聖母。 兩年後，教宗庇護十一世宣佈她為傳教會的女贊助人。</span><br><br></p>
 				</div>
@@ -349,7 +351,7 @@
 		</div>
 	</section>
 
-	<section class="s-spacing-base" id="con">
+	<section class="s-spacing-base" id="connecting">
 		<div class="s-con s-spacing">
 			<h3 style ="padding-bottom:30px">
 				<span class="eng">Connect with us!</span><br>
@@ -403,7 +405,7 @@
 				</script>
 			</div>
 
-			<ul>
+			<ul id="time">
 				<li onClick="conUpt(
 					'images/church-1.jpg',
 					'Opening Hours',
@@ -566,7 +568,9 @@
 				scrollTop: target.offset().top - 200
 				}, 500);
 			}
-		});
+		})
+
 	</script>
 
 </body>
+</html>

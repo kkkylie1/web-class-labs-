@@ -36,91 +36,36 @@
     <!-- Custom Script -->
     <script src="helpers.js"></script>
 
+	<style>
+        .subpage-header {
+            position: relative;
+        }
 
-    <!-- style for the evt-card -->
-    <style>
-
-
-        .evt-card-container {
+        .img-text-subpage {
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .evt-card {
-            position: relative;
-            width: 600px;
-            height: 400px;
-            overflow: hidden;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-
-        .evt-card img {
-            width: 100%;
             height: 100%;
-            /* object-fit: cover; */
-        }
-
-        .evt-card-fade-sec,
-        .evt-card-fade-pri {
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
-        .evt-card-fade-sec {
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        .evt-card-fade-pri {
-            background-color: rgba(255, 255, 255, 0.5);
-        }
-
-        .evt-card h4 {
+        .img-text-subpage p {
+            color: white;
+            font-size: 50px;
+            background-color: transparent;
             position: absolute;
-            bottom: 10px;
-            left: 10px;
-            color: var(--color-secondary);
-            padding: 10px;
         }
+		</style>
 
-        @media (max-width: 768px) {
-            .evt-card {
-                width: 100%;
-                height: auto;
-            }
-
-            .evt-card img {
-                height: auto;
-            }
-        }
-
-        @media (min-width: 1200px) {
-
-            .evt-card-container {
-                width:auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-                gap: 20px;
-            }
-
-            .evt-card {
-                width: 600px;
-                height: 400px;
-            }
-
-            .evt-card img {
-                height: auto;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -134,28 +79,27 @@
 				<ul class="">
 					<li class="nav-li" onClick=toggleLang()> <span class="eng font-noto-tc">中文</span> <span class="chi">Eng</span> </li>
 
-					<a href="../index.html"><li class="nav-li">
+					<a href="index.html"><li class="nav-li">
 						<span class="eng">About Us</span>
 						<span class="chi">關於我們</span></li>
 					</a>
 
-					<a href="#"><li class="nav-li">
-						<span class="eng">Events</span>
-						<span class="chi">活動</span></li>
+					<a href="#time"><li class="nav-li">
+						<span class="eng">Timetable</span>
+						<span class="chi">時間表</span></li>
 					</a>
 
-					<a href="#"><li class="nav-li">
-						<span class="eng">News</span>
-						<span class="chi">新聞</span></li>
+					<a href="subpage_newandevent.html"><li class="nav-li">
+						<span class="eng">News and Events</span>
+						<span class="chi">消息&活動</span></li>
 					</a>
-                    
 
-					<a href="#"><li class="nav-li">
+					<a href="subpage_resources.html"><li class="nav-li">
 						<span class="eng">Resources</span>
 						<span class="chi">資源</span></li>
 					</a>
 
-					<a href="#"><li style="background-color: #E2E2F2; color: var(--color-secondary);" class="nav-li">
+					<a href="#connecting"><li style="background-color: #E2E2F2; color: var(--color-secondary);" class="nav-li">
 						<span class="eng">Connect with us!</span>
 						<span class="chi">與我們連繫！</span></li>
 					</a>
@@ -183,6 +127,20 @@
 	</div>
 	<!-- End of Nav -->
 
+        <!-- Subpage Header -->
+        <div class="subpage-header">
+            <div class="carousel-inner">
+                <!-- Images -->
+                <div class="carousel-item active">
+                    <img src="images/Event_5.jpg" alt="1" class="d-block" style="width: 100%;">
+                </div>
+            </div>
+
+            <div class="img-text-subpage">
+                <p>Resources</p>
+            </div>
+        </div>
+
     </header>
     <article>
 
@@ -190,7 +148,7 @@
                 <div class="s-evts s-spacing">
                     <h3>
                         <span class="eng">Past Events Photos</span>
-                        <span class="chi">即將舉行的活動照片</span>
+                        <span class="chi">活動照片</span>
                     </h3>
         
                     <div class="evt-card-container">
@@ -199,25 +157,27 @@
                         <div class="evt-card">
                             <div class="evt-card-fade-sec"></div>
                             <div class="evt-card-fade-pri"></div>
-                            <img style="width:70%;" src="images/Event_4.jpg ">
+                            <img style="width:90%;" src="images/Event_7.jpg ">
                             <h4>
-                                <span>2025's Events</span>
+                                <span class="eng">2025's Events</span>
+                                <span class="chi">2025的活動</span>
                             </h4>
                         </div>
         
                         <div class="evt-card" style="min-width: 30%;">
                             <div class="evt-card-fade-sec"></div>
                             <div class="evt-card-fade-pri"></div>
-                            <img  style="width:70%;" src="images/Event_5.jpg">
+                            <img  style="width:90%;" src="images/Event_4.jpg">
                             <h4>
-                                <span>2024's Events</span>
+                                <span class="eng">2024's Events</span>
+                                <span class="chi">2024的活動</span>
                             </h4>
                         </div>
         
                         <div class="evt-card">
                             <div class="evt-card-fade-sec"></div>
                             <div class="evt-card-fade-pri"></div>
-                            <img style="width:70%;" src="images/Event_6.jpg">
+                            <img style="width:90%;" src="images/Event_6.jpg">
                             <h4>
                                 <span class="eng">2023's Events <br>or earlier </span>
                                 <span class="chi">2023年或更早的活動</span>
@@ -261,6 +221,7 @@
             }
         });
     </script>
+	
 </body>
 <Footer>
 		<div class="lazy-brand" style="height: 15vh;">
