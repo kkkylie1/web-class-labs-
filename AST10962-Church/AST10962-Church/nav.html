@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catholic Parish Website</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="top-bar">
+                <div class="logo">
+                    <img src="images/common/logo.png" alt="Logo">
+                </div>
+                
+                <div class="connect-section">
+                    <div class="social-icons">
+                        <button>Connect with us!</button>
+                    </div>
+                    
+                    <select class="language-selector">
+                        <option value="en">English</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+            </div>
+            
+            <nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul id="navMenu">
+                    <li>
+                        <a href="#">Information</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Mass Schedule</a></li>
+                            <li><a href="#">Devotions</a></li>
+                            <li><a href="#">Forms</a></li>
+                            <li><a href="#">Storm Guidelines</a></li>
+                            <li><a href="#">Parking</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Parish Announcements</a></li>
+                            <li><a href="#">General Intercessions</a></li>
+                            <li><a href="#">Hong Kong Diocese</a></li>
+                            <li><a href="#">Newsletters</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Prayers</a></li>
+                            <li><a href="#">Liturgy</a></li>
+                            <li><a href="#">Daily Readings</a></li>
+                            <li><a href="#">Sacraments</a></li>
+                            <li><a href="#">Catholic Calendar</a></li>
+                            <li><a href="#">Catholic Encyclopedia</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">About us</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Patron Saint</a></li>
+                            <li><a href="#">Parish History</a></li>
+                            <li><a href="#">Organisations</a></li>
+                            <li><a href="#">Covered areas</a></li>
+                            <li><a href="#">Pilgrimage Leaflet</a></li>
+                            <li><a href="#">Parish Council</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Events</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Upcoming Events</a></li>
+                            <li><a href="#">Past Events</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 20px 0;">
+        <!-- Your page content will go here -->
+    </main>
+
+    <script>
+        // Mobile menu toggle functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+        
+        // Mobile dropdown functionality
+        if (window.innerWidth <= 768) {
+            const navItems = document.querySelectorAll('#navMenu > li');
+            
+            navItems.forEach(item => {
+                const link = item.querySelector('a');
+                link.addEventListener('click', (e) => {
+                    if (item.classList.contains('active')) {
+                        item.classList.remove('active');
+                    } else {
+                        // Close any open dropdowns first
+                        navItems.forEach(i => i.classList.remove('active'));
+                        item.classList.add('active');
+                    }
+                    e.preventDefault();
+                });
+            });
+        }
+    </script>
+</body>
+</html>
