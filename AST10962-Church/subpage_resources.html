@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Photos</title>
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>
+
+    <!-- Google Fonts Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font Downloads -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link href="Project Aided by Hermina Tealie">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mobile.css">
+
+    <!-- Custom Script -->
+    <script src="helpers.js"></script>
+
+
+    <!-- style for the evt-card -->
+    <style>
+
+
+        .evt-card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .evt-card {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .evt-card img {
+            width: 100%;
+            height: 100%;
+            /* object-fit: cover; */
+        }
+
+        .evt-card-fade-sec,
+        .evt-card-fade-pri {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .evt-card-fade-sec {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .evt-card-fade-pri {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .evt-card h4 {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: var(--color-secondary);
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .evt-card {
+                width: 100%;
+                height: auto;
+            }
+
+            .evt-card img {
+                height: auto;
+            }
+        }
+
+        @media (min-width: 1200px) {
+
+            .evt-card-container {
+                width:auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .evt-card {
+                width: 600px;
+                height: 400px;
+            }
+
+            .evt-card img {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    	<!-- Start of Nav -->
+	<div class="nav-base">
+		<nav class="nav-container">
+			<a href="../index.html"><img class="nav-img" src="images/common/logo.png" alt="St. Teresa's Church"></a>
+
+			<div class="nav-sub">
+				<ul class="">
+					<li class="nav-li" onClick=toggleLang()> <span class="eng font-noto-tc">中文</span> <span class="chi">Eng</span> </li>
+
+					<a href="../index.html"><li class="nav-li">
+						<span class="eng">About Us</span>
+						<span class="chi">關於我們</span></li>
+					</a>
+
+					<a href="#"><li class="nav-li">
+						<span class="eng">Events</span>
+						<span class="chi">活動</span></li>
+					</a>
+
+					<a href="#"><li class="nav-li">
+						<span class="eng">News</span>
+						<span class="chi">新聞</span></li>
+					</a>
+                    
+
+					<a href="#"><li class="nav-li">
+						<span class="eng">Resources</span>
+						<span class="chi">資源</span></li>
+					</a>
+
+					<a href="#"><li style="background-color: #E2E2F2; color: var(--color-secondary);" class="nav-li">
+						<span class="eng">Connect with us!</span>
+						<span class="chi">與我們連繫！</span></li>
+					</a>
+
+
+				</ul>
+			<div>
+		</nav>
+
+		<script>
+			$(document).ready(function () {
+				$(window).on("scroll", function () {
+					if ($(window).scrollTop() > 100) {
+						$(".nav-container").addClass("shrink");
+						$(".nav-img").addClass("shrink");
+						$(".nav-li").addClass("shrink");
+					} else {
+						$(".nav-container").removeClass("shrink");
+						$(".nav-img").removeClass("shrink");
+						$(".nav-li").removeClass("shrink");
+					}
+				});
+			});
+		</script>
+	</div>
+	<!-- End of Nav -->
+
+    </header>
+    <article>
+
+            <section class="s-spacing-base" id="evts" style="padding-top: 0;">
+                <div class="s-evts s-spacing">
+                    <h3>
+                        <span class="eng">Past Events Photos</span>
+                        <span class="chi">即將舉行的活動照片</span>
+                    </h3>
+        
+                    <div class="evt-card-container">
+        
+        
+                        <div class="evt-card">
+                            <div class="evt-card-fade-sec"></div>
+                            <div class="evt-card-fade-pri"></div>
+                            <img style="width:70%;" src="images/Event_4.jpg ">
+                            <h4>
+                                <span>2025's Events</span>
+                            </h4>
+                        </div>
+        
+                        <div class="evt-card" style="min-width: 30%;">
+                            <div class="evt-card-fade-sec"></div>
+                            <div class="evt-card-fade-pri"></div>
+                            <img  style="width:70%;" src="images/Event_5.jpg">
+                            <h4>
+                                <span>2024's Events</span>
+                            </h4>
+                        </div>
+        
+                        <div class="evt-card">
+                            <div class="evt-card-fade-sec"></div>
+                            <div class="evt-card-fade-pri"></div>
+                            <img style="width:70%;" src="images/Event_6.jpg">
+                            <h4>
+                                <span class="eng">2023's Events <br>or earlier </span>
+                                <span class="chi">2023年或更早的活動</span>
+                            </h4>
+                        </div>
+                        
+                    </div>
+                </div>
+
+    </article>
+    
+    <footer>
+    </footer>
+    <script>
+        //	Toggle Language
+        function toggleLang() {
+            if ($('.chi').css('display') === 'none')
+            {
+                $('.chi').show();
+                $('.eng').hide();
+            } else {
+                $('.eng').show();
+                $('.chi').hide();
+            }
+        }
+    
+        const foreignAid = "Project Aided by Hermina Tealie";
+    
+        //	Generates Lorem Ipsum
+        const newParagraph = loremIpsum();
+        $('.lorem').append(newParagraph);
+    
+        //	Replaces Scroll Behavior
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            const target = $($(this).attr('href'));
+            if (target.length) {
+                $('html, body').animate({
+                scrollTop: target.offset().top - 200
+                }, 500);
+            }
+        });
+    </script>
+</body>
+<Footer>
+		<div class="lazy-brand" style="height: 15vh;">
+			<img src="images/common/logo.png" alt="St. Teresa's Church">
+			<img src="images/common/logo.png" alt="St. Teresa's Church">
+			<link href="Project Aided by Hermina Tealie">
+			<img src="images/common/logo.png" alt="St. Teresa's Church">
+			<img src="images/common/logo.png" alt="St. Teresa's Church">
+		</div>
+
+		<div class="footer-main">
+			<div class="footer-part">
+				<h5>
+					<span class="eng">Contact</span>
+					<span class="chi">聯絡我們</span>
+				</h5>
+
+				<ul>
+					<li>
+						<h6><span class="eng">Address</span></h6>
+						<h6><span class="chi">地址</span></h6>
+						<span class="eng">258 Prince Edward Road, Kowloon</span><br>
+						<span class="chi">九龍太子道258號<</span>
+					</li>
+
+					<li>
+						<h6><span class="eng">Phone</span></h6>
+						<h6><span class="chi">電話</span></h6>
+						<p>+852 2336-2241</p>
+					</li>
+
+					<li>
+						<h6><span class="eng">Email Address</span></h6>
+						<h6><span class="chi">Email 地址</span></h6>
+						<p>stteresa@catholic.org.hk</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer-part">
+				<h5>
+					<span class="eng">Quick Links</span>
+					<span class="chi">快速連結</span>
+				</h5>
+
+				<ul class="footer-btn">
+					<a href="#abt"><li>
+						<span class="eng">About Us</span>
+						<span class="chi">關於我們</span>
+					</li></a>
+
+					<a href="#evts"><li>
+						<span class="eng">Events</span>
+						<span class="chi">活動</span>
+					</li></a>
+
+					<a href="#con"><li>
+						<span class="eng">Connect with Us</span>
+						<span class="chi">與我們連繫</span>
+					</li></a>
+
+				</ul>
+			</div>
+
+			<div class="footer-part">
+ 				<h5>
+					<span class="eng">Follow Us!</span>
+					<span class="chi">追蹤我們！</span>
+				</h5>
+
+            	<ul class="footer-btn">
+
+					<li><a href="https://facebook.com">
+							<i class="fa fa-facebook"></i>
+							<span>Facebook</span>
+					</a></li>
+
+					<li><a href="https://instagram.com">
+						<i class="fa fa-instagram"></i>
+						<span>Instagram</span>
+					</a></li>
+				</ul>
+        </div>
+		</div>
+
+		<div class="footer-bottom">
+        	<p>
+            <span class="eng">© 2025 St. Teresa's Church. All rights reserved.</span><br>
+            <span class="chi">© 2025 聖德肋堂版權所有。</span>
+        	</p>
+    	</div>
+	</Footer>
+
+</html>
