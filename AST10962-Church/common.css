@@ -89,6 +89,17 @@ nav{
 		border:solid var(--color-primary);
 	}
 
+	.nav-li-connect-btn{
+		border:solid #E2E2F2; 
+		background-color: #E2E2F2;
+		color: var(--color-secondary);
+		box-shadow: 0 0 2px rgb(0, 94, 255); 
+		transition: box-shadow 0.3s; 
+		font-size: max(1.5vw, 15px) !important;
+		padding: 2px 1.5vw;
+	}
+
+
 	.nav-li.shrink{
 		font-size: max(1vw, 12px) !important;
 		padding: 0.25vh 1.5vw;
@@ -103,6 +114,8 @@ nav{
 		background-color: var(--color-primary);
 		border: solid;
 	}
+
+	
 }
 .navbar {
 	background-color: white !important; 
